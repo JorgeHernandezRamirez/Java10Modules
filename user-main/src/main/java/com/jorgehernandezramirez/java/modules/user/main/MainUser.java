@@ -11,8 +11,8 @@ public class MainUser {
     private static Logger LOGGER = LoggerFactory.getLogger(MainUser.class);
 
     public static void main(final String[] args){
-        final ServiceLoader<IUserService> userServiceLoader = ServiceLoader.load(IUserService.class);
-        final IUserService userService = userServiceLoader.findFirst().get();
+        var userServiceLoader = ServiceLoader.load(IUserService.class);
+        var userService = userServiceLoader.findFirst().get();
         LOGGER.info("{}", userService.getUsersDto());
     }
 }

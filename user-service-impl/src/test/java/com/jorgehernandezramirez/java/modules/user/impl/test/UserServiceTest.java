@@ -20,7 +20,7 @@ public class UserServiceTest {
 
     @Test
     public void shouldInsertOneUserCorrectly(){
-        final Integer numberOfUsers = userService.getUsersDto().size();
+        var numberOfUsers = userService.getUsersDto().size();
         userService.add(new UserDto("3", "Jorge"));
         assertEquals(1, userService.getUsersDto().size() - numberOfUsers);
     }
@@ -33,7 +33,7 @@ public class UserServiceTest {
 
     @Test
     public void shouldRemoveOneUserCorrectly(){
-        final Integer numberOfUsers = userService.getUsersDto().size();
+        var numberOfUsers = userService.getUsersDto().size();
         userService.add(new UserDto("4", "Jorge"));
         assertEquals(1, userService.getUsersDto().size() - numberOfUsers);
         userService.remove(new UserDto("4", "Jorge"));
