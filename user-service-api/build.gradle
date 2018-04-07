@@ -1,0 +1,9 @@
+plugins {
+    id 'java-library'
+    id 'java'
+}
+
+sourceCompatibility = 10
+
+group 'com.jorgehernandezramirez.java.modules.user'
+version '1.0-SNAPSHOT'

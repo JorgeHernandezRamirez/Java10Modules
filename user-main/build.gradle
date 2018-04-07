@@ -1,0 +1,14 @@
+plugins {
+    id 'java-library'
+    id 'java'
+}
+
+group 'com.jorgehernandezramirez.java.modules.user'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 10
+
+dependencies {
+    api project(':user-service-impl')
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: logback_version
+}
